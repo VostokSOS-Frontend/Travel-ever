@@ -1,1 +1,1 @@
-I am not very clever guy DANIIL
+My name is Daniil. I am 16 y.o
