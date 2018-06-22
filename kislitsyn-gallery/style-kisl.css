@@ -1,0 +1,18 @@
+.kar{
+    width: 450;
+    height: 350px;
+}
+a[href^="http"]{
+    background-color: bisque;
+}
+li:hover{
+    color: red;
+}
+a:visited{
+    color: black;   
+}
+.picture:hover{
+    background-image: url(http://kidpassage.com/images/publications/fruktyi-v-arabskih-emiratah-oae/1463_FruktyOAE_gallery215474946.jpg);
+    width: 700px;
+    height: 450px;
+}
