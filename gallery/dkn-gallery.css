@@ -1,4 +1,6 @@
-p, a, h1, h2 :hover {
-    background: aqua;
-    color:rgb(0, 110, 255);
+a:hover {
+    color:rgb(255, 0, 0);
+}
+h2:hover {
+    color:rgb(225, 0, 255);
 }
