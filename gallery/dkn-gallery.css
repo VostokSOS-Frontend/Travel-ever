@@ -1,0 +1,4 @@
+p, a, h1, h2 :hover {
+    background: aqua;
+    color:rgb(0, 110, 255);
+}
