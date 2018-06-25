@@ -1,0 +1,51 @@
+p, h1, h2 /* селектор */{
+    color: green;
+    font-size: 3rem;
+}/* блок объявлений */
+#i1 {
+color:red
+}
+.class1, #i2 {
+    color:blue
+}
+a[href^="http"]{/* ^-значение атрибута начинается на..., $-заканчивается на..., *-содержит слово...,~-слово, окруженное пробелами, |-применять к объектам с определенным атрибутом lang, alt */
+    background-color: red;
+    color: black;
+}/* для внешних ссылок */
+.class1.class2.class3 {
+    color: aliceblue
+}
+
+li li li {
+    color:black;
+}/* эл-ты li третьего уровня */
+
+li:hover {
+    color: red;
+}
+/* псевдокласс (состояние э-та) */
+
+a:visited {
+    color:lime;
+}
+a:visited:hover {
+    color:blue;
+}
+
+/* псведоэлемент */
+::selection {
+    background-color:blue;
+}
+
+div.pic1{
+    width: 1000px;
+    height: 900px;
+    background-image: url("https://images.homedepot-static.com/productImages/67107669-aedd-415d-9929-c6b08df42cc7/svn/costa-farms-house-plants-10maj-64_1000.jpg");
+    background-size: cover;
+}
+.pic1:hover{
+    width: 1000px;
+    height: 900px;
+    background-image: url("https://i5.walmartimages.com/asr/54830a95-a619-4eff-bf97-1e9c2b9c48fb_1.0c1ae21ae6c8c8f7802065176b4ba685.jpeg");
+    
+}
