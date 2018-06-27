@@ -2,13 +2,41 @@ a:hover {
     color:rgb(0, 247, 255);
     font-size:2rem;
 }
-.sprite{
+.spritel{
 display:inline-block;
-width:50px;
-height:50px;
-background-image: url(img/spritesheet.png);
-background-position: 
+width:100px;
+height:100px;
+background-image: url("../img/spritesheet.png");
+background-position: 3px -12px; /* можно задать в процентах */
+text-indent: -9999rem;
+background-repeat: no-repeat;
 }
+.spriter{
+    display:inline-block;
+    width:100px;
+    height:100px;
+    background-image: url("../img/spritesheet.png");
+    background-position: 93px -12px;
+    text-indent: -9999rem;
+    }
 .sprite:hover{
+
+}
+a[href^="http"]:before {
+    content: "["
+
+/* выделяет внешние ссылки квадратными скобками */
+}
+a[href^="http"]:before {
+    content: "";
+    display: inline-block;
+    width:16px;
+    height:16px;
+    background-image:  url("https://cdn0.iconfinder.com/data/icons/octicons/1024/link-external-16.png")
+}
+.main {
+    display:none;
+}
+.main:hover>.menu{/* отдельные классы для ul и li */
 
 }
