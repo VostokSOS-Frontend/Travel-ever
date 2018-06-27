@@ -34,7 +34,7 @@
         </dl>
        <!-- якорь -->
        <!-- система навигации:где я нахожусь? где я уже был? куда я могу еще прийти? главное меню на всех страницах (до 5 пунктов на одном уровне), внизу повторить его обычными ссылками-->
-       <nav>
+       <nav><!-- менюЫ -->
         <ul>
             <li>Европа</li>
             <ul>
@@ -66,7 +66,103 @@
         </ul>
         </ul>
     </nav>
-</body>
-</html>
+<!-- таблица -->
+    <table border="1">
+        <caption>Список группы</caption><!-- заголовок, исп. только для таблицы -->
+        <thead><!-- исп. для привязки стиля в сss -->
+            <tr><!-- table row -->
+            <th>№</th>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Отчество</th>
+            <th>Дата рождения</th>
+            <th>Команда</th>
+        </thead>
+        </tr>
+        <tfoot><!-- пишется до tbody -->
+                <tr>
+                    <th>Итого</th>
+                    <td colspan="4" align="center">9 человек</td>
+                    <td>3 команды</td>
+                </tr>
+            </tfoot>
+        <tbody class="avaj">
+        <tr>
+            <th>1</th>
+            <td>Коцабюк</td><!-- table data -->
+            <td>Коля</td>
+            <td>Васильевич</td>
+            <td>??.??.??</td>
+            <td rowspan="4" text-align="center">AVAJ</td>
+            </tbody>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Годецкий</td>
+            <td>Ян</td>
+            <td>Ярославович</td>
+            <td>??.??.??</td>
+           
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Кислицин</td>
+            <td>Даниил</td>
+            <td>Батькович</td>
+            <td>??.??.??</td>
+            
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>Подобед</td>
+            <td>Текаши</td>
+            <td>Владимирович</td>
+            <td>??.??.??</td>
+            <tbody class="dragneel">
+        <tr>
+            <th>5</th>
+            <td>Нарийский</td>
+            <td>Кенвальд</td>
+            <td>Батькович</td>
+            <td>??.??.??</td>
+            <td rowspan="1" text-align="center">DRAGNEEL</td>
+        </tr>
+    </tbody>
+    <tbodyclass="bugs">
+        <tr>
+            <th>6</th>
+            <td>Романенко</td>
+            <td>Виталий</td>
+            <td>Батькович</td>
+            <td>??.??.??</td>
+            <td rowspan="4" text-align="center">BUGS</td>
+
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>Поротиков</td>
+            <td>Миша</td>
+            <td>Александрович</td>
+            <td>??.??.??</td>
+            
+        </tr>
+        <tr>
+            <th>8</th>
+            <td>Да</td>
+            <td>Нилка</td>
+            <td>Батькович</td>
+            <td>??.??.??</td>
+            
+        </tr>
+        <tr>
+            <th>9</th>
+            <td>Артём</td>
+            <td>ТэЙлОр</td>
+            <td>Батькович</td>
+            <td>??.??.??</td>
+            
+        </tr>
+    </tbody>
+    </table>
 </body>
 </html>
