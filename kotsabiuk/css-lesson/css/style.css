@@ -1,3 +1,10 @@
-body{
-    background-color: blue;
+.picture-1{
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/image-1.jpg");
+}
+.picture-1:hover{
+    background-image: url("../img/image-1-hover.jpg");
 }
