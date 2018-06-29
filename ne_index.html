@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="dkn-style.css">
 </head>
 <body>
     <p contenteditable 
@@ -67,8 +68,12 @@
         </ul>
     </nav>
 <!-- таблица -->
-    <table border="1">
+    <table>
         <caption>Список группы</caption><!-- заголовок, исп. только для таблицы -->
+        <colgroup>
+                <col span="4">
+                <col span ="1" class="col">
+            </colgroup>
         <thead><!-- исп. для привязки стиля в сss -->
             <tr><!-- table row -->
             <th>№</th>
@@ -94,8 +99,9 @@
             <td>Васильевич</td>
             <td>??.??.??</td>
             <td rowspan="4" text-align="center">AVAJ</td>
-            </tbody>
+            
         </tr>
+
         <tr>
             <th>2</th>
             <td>Годецкий</td>
@@ -112,12 +118,15 @@
             <td>??.??.??</td>
             
         </tr>
+
+   
         <tr>
             <th>4</th>
             <td>Подобед</td>
             <td>Текаши</td>
             <td>Владимирович</td>
             <td>??.??.??</td>
+            </tr>
             <tbody class="dragneel">
         <tr>
             <th>5</th>
@@ -128,7 +137,7 @@
             <td rowspan="1" text-align="center">DRAGNEEL</td>
         </tr>
     </tbody>
-    <tbodyclass="bugs">
+    <tbody class="bugs">
         <tr>
             <th>6</th>
             <td>Романенко</td>
@@ -160,9 +169,9 @@
             <td>ТэЙлОр</td>
             <td>Батькович</td>
             <td>??.??.??</td>
-            
         </tr>
     </tbody>
     </table>
+    <!-- специфичность -->
 </body>
 </html>

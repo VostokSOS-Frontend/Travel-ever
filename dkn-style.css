@@ -55,6 +55,14 @@ div.pic1{
 .dragneel{
     background-color: blue;
 }
-.avaj{
+.bugs{
     background-color: green;
 }
+.col{
+    background-color: aquamarine;
+}
+.border{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+[title] {}/* для всех элементов с атрибутом title */
