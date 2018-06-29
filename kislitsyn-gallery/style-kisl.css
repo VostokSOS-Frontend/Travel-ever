@@ -23,3 +23,21 @@ a:visited{
     color: rgb(255, 255, 255);
     background-color: darkcyan;
 }
+a[href^="http"]:after{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(https://cdn0.iconfinder.com/data/icons/heroicons-ui/24/icon-external-link-16.png);
+}
+.arrow-next {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-image: url(https://vostoksos-frontend.github.io/Travel-ever/kislitsyn-gallery/sprite.png);
+    text-indent: -9999rem;
+    background-position: -115px -10px;
+}
+.arrow-next:hover {
+    background-position: -666px -10px;
+}

@@ -1,0 +1,24 @@
+@import "colors.css";
+body{
+    color: red;
+}
+.btn.btn{
+    color: green !important;
+    font-size: 2rem;
+}
+
+button.btn{
+    color: red;
+}
+.scroll{
+    background-color: bisque;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    color: black;
+    font-family: 'IM Fell English SC', serif;
+    text-shadow: 1px -0.5px 0px red, -1px 0.5px 0px green, 0px 0px 5px black;
+}
+.shrift{
+    font-family: 'Pacifico', cursive;
+}
