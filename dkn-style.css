@@ -1,6 +1,9 @@
-p, h1, h2 /* селектор */{
-    color: green;
+
+
+p, h1, h2 { 
+    color: black !important;/*  */
     font-size: 3rem;
+    font-family: 'Caveat', cursive;
 }/* блок объявлений */
 #i1 {
 color:red
@@ -9,7 +12,7 @@ color:red
     color:blue
 }
 a[href^="http"]{/* ^-значение атрибута начинается на..., $-заканчивается на..., *-содержит слово...,~-слово, окруженное пробелами, |-применять к объектам с определенным атрибутом lang, alt */
-    background-color: red;
+    
     color: black;
 }/* для внешних ссылок */
 .class1.class2.class3 {
@@ -65,4 +68,31 @@ div.pic1{
     border-collapse: collapse;
     border: 1px solid black;
 }
-[title] {}/* для всех элементов с атрибутом title */
+[title] {
+    /* для всех элементов с атрибутом title */
+
+
+}
+html, body {
+    -ms-scrollbar-base-color: blue;
+}
+
+#p{
+    width: 1000px;
+    height: 1000x;
+    background-color: brown;
+    overflow: scroll;
+    
+    
+}
+#p::-webkit-scrollbar{
+    width: 100px;
+    height: 400px;
+}
+#p::-webkit-scrollbar-track{
+    background:red;
+}
+#p::-webkit-scrollbar-thumb{
+    background-image: url("./img/Без названия.jpg");
+    border-radius: 700px;
+}
