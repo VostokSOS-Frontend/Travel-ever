@@ -12,13 +12,19 @@ button.btn{
 }
 .scroll{
     background-color: bisque;
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     overflow: auto;
     color: black;
     font-family: 'IM Fell English SC', serif;
     text-shadow: 1px -0.5px 0px red, -1px 0.5px 0px green, 0px 0px 5px black;
+    float: left;
 }
 .shrift{
     font-family: 'Pacifico', cursive;
+}
+.map{
+    width: 280px;
+    height: 225px;
+    float: right;
 }
