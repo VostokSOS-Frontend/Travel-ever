@@ -12,7 +12,6 @@ color:red
     color:blue
 }
 a[href^="http"]{/* ^-значение атрибута начинается на..., $-заканчивается на..., *-содержит слово...,~-слово, окруженное пробелами, |-применять к объектам с определенным атрибутом lang, alt */
-    
     color: black;
 }/* для внешних ссылок */
 .class1.class2.class3 {
@@ -95,4 +94,10 @@ html, body {
 #p::-webkit-scrollbar-thumb{
     background-image: url("./img/Без названия.jpg");
     border-radius: 700px;
+}
+body {
+    cursor: url("./img/cur.ani"), auto;
+}
+area {
+    outline:none;
 }
