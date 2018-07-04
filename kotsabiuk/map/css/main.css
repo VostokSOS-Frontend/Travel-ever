@@ -1,6 +1,23 @@
-.rec{
+.first-rec{
     width: 200px;
-    height: 200px;
+    height: 150px;
     position: absolute;
-    background-color: #000000;
+    background-color: green;
+}
+.second-rec{
+    width: 200px;
+    height: 150px;
+    background-color: red;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.third-rec{
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    top: 30px;
+    left: 50px;
 }
