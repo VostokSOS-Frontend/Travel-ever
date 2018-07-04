@@ -4,29 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Заголовок страницы</title>
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet" target="_self">
     <link rel="stylesheet" href="dkn-style.css">
 </head>
 <body>
-    <p contenteditable 
-    title="Подсказка">Параграф <br> <!-- перевод строки--> текста <hr> <!--горизонтальная строка--> Второй <br> параграф <br><img src = "./img/Без названия.jpg" alt="котик"> <!-- установить width и height, чтобы браузер зарезервировал место для изображения, для превью и для норм картинки использовать два разных изображения --><!-- ./-текущая папка, ../-родительская папка, /-корень сервера --> </p>
+    <style>
+        
+body {
+    cursor: url("./img/cur.ani"), auto;
+}
+        </style>
+    <p align="center" contenteditable 
+    title="Подсказка">Параграф <br> <!-- перевод строки--> текста <hr> <!--горизонтальная строка--><img src = "./img/Без названия.jpg" alt="котик"><hr><!-- установить width и height, чтобы браузер зарезервировал место для изображения, для превью и для норм картинки использовать два разных изображения --><!-- ./-текущая папка, ../-родительская папка, /-корень сервера --> </p>
     <!-- параграф, дочерний от body -->
-    <h1 style=
-    "color:#ff0956; 
-    background-color: rgba(23,45,78,40%); 
-    font-size: 50px; 
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-weight: inherit; 
-    font-variant: small-caps;
-    line-height: 2rem;
-    border: 2px solid rgb(192, 0, 0);
-    padding: 10px; 
-    margin: 1,5em;
-    border-radius: 10px;
-    font: italic bold Courier, Times"> <!-- все можно указывать в font -->
-        Название книги</h1> <!-- <ul>li*5 -->
+    <h1 align="center">Название книги</h1> <!-- ul>li*5 -->
     <h2></h2>
     <h3 id="i1">Глава 1</h3>
     <!-- блочные элементы по умолчанию по ширине занимают все доступное пространство, внутри можно вставлять другие блочные эл. (кроме их самих) -->> <br>
@@ -36,7 +27,7 @@
         </dl>
        <!-- якорь -->
        <!-- система навигации:где я нахожусь? где я уже был? куда я могу еще прийти? главное меню на всех страницах (до 5 пунктов на одном уровне), внизу повторить его обычными ссылками-->
-       <nav><!-- менюЫ -->
+       <nav><!-- меню -->
         <ul>
             <li>Европа</li>
             <ul>
@@ -173,7 +164,15 @@
         </tr>
     </tbody>
     </table>
-    <!-- специфичность -->
     <p id="p">текстттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттт</p>
+    <!-- <iframe src="frame.html" frameborder="20" width="600" height="600"></iframe> -->
+
+    <!-- Карты ссылок -->
+    <img src="img/Безымянный.jpg" alt="0" usemap="#map">
+    <map name="map">
+        <area shape="circle" coords="556, 387, 77" nohref />
+        <area shape="poly" href="https://summerstyle.github.io/summer/#" coords="542, 90, 308, 224, 776, 230" />
+        <area shape="rect" href="https://summerstyle.github.io/summer/#" coords="310, 235, 779, 528" />
+    </map>
 </body>
 </html>
