@@ -1,0 +1,20 @@
+.main{
+    background-color: lightgray;
+    width: 450px;
+    height: 600px;
+    
+}
+.kard{
+    background-image: url(bank.png);
+    width: 290px;
+    height: 195px;
+    background-repeat: no-repeat;
+    block-size: cover;
+    margin-left: 75px;
+}
+.x{
+    width: 70px;
+}
+.X{
+    margin-left: 65px;
+}
