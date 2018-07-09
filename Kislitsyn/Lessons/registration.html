@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="registration.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="registration.html">
+    <p>REGISTRATION</p>
+<p><h3 class="h3">E-mail:<input type="email" class="login"></h3>
+<h3 class="h3"> Password:<input type="password" class="password"></h3></p>
+<p><h3>Birthdate:
+    <input type="number" class="day" min="1" max="31" placeholder="Day">
+    <select aria-placeholder="month" class="month">
+        <option selected="selected"></option>
+        <option>january</option>
+        <option>february</option>
+        <option>march</option>
+        <option>april</option>
+        <option>may</option>
+        <option>june</option>
+        <option>july</option>
+        <option>august</option>
+    </select>
+    <input type="number" class="year" min="1960" max="2010" placeholder="Year"></p>
+    <p><h3 class="h3">Sex:</h3>
+        <input type="radio" name="answer">male
+        <input type="radio" name="answer">female
+        <input type="radio" name="answer">other</p>
+<fieldset>
+    <legend>Pets</legend>
+    <input type="checkbox"> Cat
+    <input type="checkbox"> Dog
+    <input type="checkbox"> Hamster
+    <input type="checkbox"> Turtle
+    <input type="checkbox"> Horse
+    <input type="checkbox"> Spider
+    <input type="checkbox"> Fish
+    <input type="checkbox"> Slime
+    <input type="checkbox"> Butterfly
+</fieldset>
+    <br>
+<p><h3 class="h3">Avatar:</h3>
+    <input type="file"></p>
+    <br>
+<input type="reset" class="button">
+<input type="submit" class="button">
+</form>
+</body>
+</html>
