@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(../img/man-and-woman.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-man {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -5px;
+}
+
+.sprite-man-black {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -5px;
+}
+
+.sprite-woman {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -143px;
+}
+
+.sprite-woman-black {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -143px;
+}
