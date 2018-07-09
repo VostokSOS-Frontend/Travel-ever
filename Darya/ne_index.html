@@ -8,14 +8,29 @@
     <link rel="stylesheet" href="dkn-style.css">
 </head>
 <body>
-    <style>
-        
-body {
-    cursor: url("./img/cur.ani"), auto;
-}
-        </style>
-    <p align="center" contenteditable 
-    title="Подсказка">Параграф <br> <!-- перевод строки--> текста <hr> <!--горизонтальная строка--><img src = "./img/Без названия.jpg" alt="котик"><hr><!-- установить width и height, чтобы браузер зарезервировал место для изображения, для превью и для норм картинки использовать два разных изображения --><!-- ./-текущая папка, ../-родительская папка, /-корень сервера --> </p>
+        <nav><!-- меню -->
+            <ul>
+                <li>Европа</li>
+            </ul>
+            <ul>
+                <li>Азия</li>
+            </ul>
+            <ul>
+                <li>С. Америка</li>
+            </ul>
+            <ul>
+                <li>Ю. Америка</li>
+            </ul>
+            <ul>
+                <li>Австралия</li>
+            </ul>
+            </ul>
+        </nav>
+    <blockquote><p align="center" contenteditable 
+    title="Подсказка">Параграф <br> <!-- перевод строки--> <q>текста </q></blockquote>
+    <hr> <!--горизонтальная строка-->
+    <img src = "./img/Без названия.jpg" alt="котик"><hr>
+    <!-- установить width и height, чтобы браузер зарезервировал место для изображения, для превью и для норм картинки использовать два разных изображения --><!-- ./-текущая папка, ../-родительская папка, /-корень сервера --> </p>
     <!-- параграф, дочерний от body -->
     <h1 align="center">Название книги</h1> <!-- ul>li*5 -->
     <h2></h2>
@@ -27,38 +42,7 @@ body {
         </dl>
        <!-- якорь -->
        <!-- система навигации:где я нахожусь? где я уже был? куда я могу еще прийти? главное меню на всех страницах (до 5 пунктов на одном уровне), внизу повторить его обычными ссылками-->
-       <nav><!-- меню -->
-        <ul>
-            <li>Европа</li>
-            <ul>
-                <li>Украина</li>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-                <li>Италия</li>
-                <li>Франция</li>
-                <li>Германия</li>
-                <li>ВБ</li>
-            </ul>
-        </ul>
-        <ul>
-            <li>Азия</li>
-        </ul>
-        <ul>
-            <li>С. Америка</li>
-        </ul>
-        <ul>
-            <li>Ю. Америка</li>
-        </ul>
-        <ul>
-            <li>Австралия</li>
-        </ul>
-        </ul>
-    </nav>
+       
 <!-- таблица -->
     <table>
         <caption>Список группы</caption><!-- заголовок, исп. только для таблицы -->
@@ -168,11 +152,56 @@ body {
     <!-- <iframe src="frame.html" frameborder="20" width="600" height="600"></iframe> -->
 
     <!-- Карты ссылок -->
-    <img src="img/Безымянный.jpg" alt="0" usemap="#map">
+<!--     <img src="img/Безымянный.jpg" alt="0" usemap="#map">
     <map name="map">
-        <area shape="circle" coords="556, 387, 77" nohref />
+        <area shape="circle" coords="556, 387, 77" href="nohref" />
         <area shape="poly" href="https://summerstyle.github.io/summer/#" coords="542, 90, 308, 224, 776, 230" />
         <area shape="rect" href="https://summerstyle.github.io/summer/#" coords="310, 235, 779, 528" />
-    </map>
+    </map> -->
+
 </body>
+<div class="div1">
+    <div class="div2"></div>
+</div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+
+<p>Регистрация</p>
+<form action="">
+<p><b>Логин</b>
+    <input type="text" size="40" placeholder="Логин"  required>
+   </p>
+   <p><b>Пароль</b>
+    <input type="password" size="40" placeholder="Пароль"  required>
+   </p>
+   <p><b>Дата рождения</b>
+    <input type="number"
+    placeholder="День" size="20" min="1" max="31">
+    <select size="1" name="1">
+        <option selected="selected">Месяц</option>
+        <option>Январь</option>
+        <option>Февраль</option>
+        <option>Март</option>
+        <option>Апрель</option>
+       </select>
+    <input type="number" placeholder="Год" size="20" min="1900" max="2000">
+   </p>
+   <p><b>Пол</b>
+  <input type="radio" name="answer">М
+  <input type="radio" name="answer">Ж
+  <input type="radio" name="answer">Другое</p>
+  <fieldset>
+    <legend>Питомцы</legend>
+      <input type="checkbox">Кошка<br>
+      <input type="checkbox">Собака<br>
+      <input type="checkbox">Черепаха
+   </fieldset>
+   <p>Аватар<input type="file" name="photo" multiple accept="image/*,image/jpeg"></p>
+
+   
+<p><input type="submit">
+<input type="reset"></p>
+</form>
 </html>

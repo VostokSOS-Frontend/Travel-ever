@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма</title>
+</head>
+<body>
+    <p>Регистрация</p>
+<form action="form.html" method="GET">
+<p><b>Логин&#160;</b>
+    <input type="text" size="40" placeholder="Логин" required autofocus>
+   </p>
+   <p><b>Пароль&#160;</b>
+    <input type="password" size="40" placeholder="Пароль" required>
+   </p>
+   <p><b>Дата рождения&#160;</b>
+    <input type="number" placeholder="День" size="20" min="1" max="31">
+    <select size="1" name="1">
+        <option selected>Месяц</option>
+        <option>Январь</option>
+        <option>Февраль</option>
+        <option>Март</option>
+        <option>Апрель</option>
+        <option>Май</option>
+        <option>Июнь</option>
+        <option>Июль</option>
+        <option>Август</option>
+        <option>Сентябрь</option>
+        <option>Октябрь</option>
+        <option>Ноябрь</option>
+        <option>Декабрь</option>
+       </select>
+    <input type="number" placeholder="Год" size="20" min="1900" max="2000">
+   </p>
+   <p><b>Пол&#160;</b>
+  <input type="radio" name="answer">М
+  <input type="radio" name="answer">Ж
+  <input type="radio" name="answer">Другое
+   </p>
+   <fieldset><!-- обводит -->
+    <legend><b>Питомцы</b></legend>
+      <label><input type="checkbox">Кошка<br></label>
+      <label><input type="checkbox">Собака<br></label>
+      <label><input type="checkbox">Черепаха</label>
+   </fieldset>
+   <p><b>Аватар&#160;</b><input type="file" name="photo" multiple accept="image/*"></p>
+   <p><input type="submit">
+<input type="reset"></p>
+<p><b>Биография</b></p>
+<textarea name="" id="" cols="30" rows="10">Ваша биография</textarea> 
+<p><b>Страна рождения</b></p>
+<select name="" id="">
+<optgroup label="Континент">
+    <option>Африка</option>
+    <option>Азия</option>
+    <option>Европа</option>
+    <option>Австралия</option>
+    <option>Америка</option>
+</optgroup>
+<optgroup label="Страна">
+    <option>Светлый</option>
+    <option>Нормальный</option>
+    <option>Темный</option>
+   </optgroup>
+</select>
+<p><b>Интересы</b></p>
+<select name="" id="" multiple disabled>
+    <option>Рисование</option>
+    <option>Пение</option>
+    <option>Охота</option>
+</select>
+</form>
+</body>
+</html>

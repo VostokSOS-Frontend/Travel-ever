@@ -4,6 +4,9 @@ p, h1, h2 {
     color: black !important;/*  */
     font-size: 3rem;
     font-family: 'Caveat', cursive;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
 }/* блок объявлений */
 #i1 {
 color:red
@@ -19,18 +22,18 @@ a[href^="http"]{/* ^-значение атрибута начинается на
 }
 
 li li li {
-    color:black;
+
 }/* эл-ты li третьего уровня */
 
 li:hover {
-    color: red;
+    color: blue;
 }
 /* псевдокласс (состояние э-та) */
 
 a:visited {
     color:lime;
 }
-a:visited:hover {
+a:hover {
     color:blue;
 }
 
@@ -81,8 +84,8 @@ html, body {
     height: 1000x;
     background-color: brown;
     overflow: scroll;
-    
-    
+    word-break: break-all;
+    direction: ltr;
 }
 #p::-webkit-scrollbar{
     width: 100px;
@@ -90,14 +93,88 @@ html, body {
 }
 #p::-webkit-scrollbar-track{
     background:red;
+    hyphens: hhjj;
 }
 #p::-webkit-scrollbar-thumb{
     background-image: url("./img/Без названия.jpg");
     border-radius: 700px;
 }
 body {
-    cursor: url("./img/cur.ani"), auto;
+    cursor: url("./img/cur.ani") auto;
 }
 area {
     outline:none;
+}
+q{
+    quotes: "'" "'";
+}
+blockquote{
+    border: 2px solid black;
+    background-color: brown;
+}
+li{
+    list-style: none;
+    margin:0;
+    padding:0;
+
+}
+nav{
+    display: flex;
+    background-color: red;
+    justify-content:space-around;
+}
+.div1{
+    width: 200px;
+    height: 500px;
+    background-color: rgb(77, 148, 77);
+    position: relative;
+    left: 600px;
+}
+.div2{
+    width: 100px;
+    height: 250px;
+    background-color: rgb(0, 238, 255);
+    position:absolute;
+}
+img{
+    position: absolute;
+}
+/* .div3{
+    width: 100px;
+    height: 250px;
+    background-color: red;
+    position: fixed;
+    top:50%;
+    right:50%;
+} */
+.div4{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position:absolute;
+    top:60px;
+    left:50px;
+    z-index: 5;
+}
+.div5{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position:absolute;
+    top:50px;
+    left:60px;
+    z-index:4;
+}
+.div6{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position:absolute;
+    top:40px;
+    left:70px;
+    z-index:3;
+}
+img{
+    position: relative;
+    left:40%;
 }

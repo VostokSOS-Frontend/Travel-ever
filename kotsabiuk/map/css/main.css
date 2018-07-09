@@ -3,6 +3,7 @@
     height: 150px;
     position: absolute;
     background-color: green;
+    opacity: 0.5;
 }
 .second-rec{
     width: 200px;
@@ -11,6 +12,7 @@
     position: relative;
     top: 30px;
     left: 50px;
+    opacity: 0.5;
 }
 
 .third-rec{
@@ -20,4 +22,5 @@
     position: relative;
     top: 30px;
     left: 50px;
+    opacity: 0.5;
 }
