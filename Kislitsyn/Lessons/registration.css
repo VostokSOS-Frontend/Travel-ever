@@ -1,22 +1,32 @@
 .login{
     width: 100px;
     height: 20px;
+    background-color: lightgray;
+    border: 2px outset blue;
 }
 .password{
     width: 100px;
     height: 20px;
+    background-color: lightgray;
+    border: 2px outset blue;
 }
 .day{
     width: 40px;
     height: 20px;
+    background-color: lightgray;
+    border: 2px outset blue;
 }
 .month{
     height: 26px;
     width: 80px;
+    background-color: lightgray;
+    border: 2px outset blue;
 }
 .year{
     width: 50px;
     height: 20px;
+    background-color: lightgray;
+    border: 2px outset blue;
 }
 .h3{
     display: inline-block;
@@ -25,4 +35,11 @@
     width: 150px;
     height: 50px;
     background-color: lightblue;
+    
+}.area{
+    background-color: lightgray;
+    border: 2px outset blue;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px;
 }
