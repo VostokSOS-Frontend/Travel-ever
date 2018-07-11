@@ -5,57 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Health form</title>
-    <link href="./scc/sprite.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/sprite.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/main.css" rel="stylesheet" type="text/css"/>
 </head>
-<style>
-    .main{
-        width: 50%;
-        height: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: antiquewhite;
-    }
-
-    #header {
-        font-weight: 900;
-        font-size: 20px;
-        text-align: center;
-        margin: 0;
-        padding-top: 10px;
-    }
-
-    #sub-header{
-        text-align: center;
-        font-size: 15px;
-        margin: 0px;
-    }
-    #form{
-        margin-top: 20px;
-    }
-    #gender-content{
-        float: right;
-        border: 1px solid black;
-        width: 70%;
-        height: 75px;
-        box-sizing: border-box;
-        padding-top: 20px;
-        padding-left: 40px;
-    }
-    #gender-title{
-        border: 1px solid black;
-        width: 30%;
-        height: 75px;        
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    .conteiner input:checked ~ .custom-mark{
-        width: 128px;
-    height: 128px;
-    background-position: -5px -5px;
-    }
-    
-</style>
 <body>
     <div class="main">
         <div>
@@ -69,11 +21,15 @@
         <div id="form">
             <form>
                 <div id="gender-content">
-                    <label class="conteiner">
+                    <label class="conteiner-man">
                         <input type="radio" name="gender" value="male" > Male 
                         <span class="custom-mark sprite sprite-man-black"></span>
                     </label>
-                <label class="sprite  sprite-woman-black"><input type="radio" name="gender" value="female"> Female<br></label>                </div>
+                    <label class="conteiner-woman">
+                        <input type="radio" name="gender" value="female">Female
+                        <span class="custom-mark sprite sprite-woman-black"></span>
+                    </label>
+                <div>
                 <div id="gender-title">
                     <p>
                         your gender    
