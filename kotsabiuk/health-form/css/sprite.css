@@ -1,29 +1,73 @@
 .sprite {
-    background-image: url(../img/man-and-woman.png);
+    background-image: url(../img/sprite.png);
+    /* background-size:  */
+    zoom: 0.2;
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-man {
-    width: 128px;
-    height: 128px;
+.sprite-active {
+    width: 256px;
+    height: 256px;
     background-position: -5px -5px;
 }
 
-.sprite-man-black {
-    width: 128px;
-    height: 128px;
-    background-position: -143px -5px;
+.sprite-active-black {
+    width: 256px;
+    height: 256px;
+    background-position: -271px -5px;
 }
 
-.sprite-woman {
-    width: 128px;
-    height: 128px;
-    background-position: -5px -143px;
+.sprite-checked-circ {
+    width: 256px;
+    height: 256px;
+    background-position: -537px -5px;
 }
+
+.sprite-checked-rect {
+    width: 256px;
+    height: 256px;
+    background-position: -5px -271px;
+}
+
+.sprite-lazy {
+    width: 256px;
+    height: 256px;
+    background-position: -271px -271px;
+}
+
+.sprite-lazy-black {
+    width: 256px;
+    height: 256px;
+    background-position: -537px -271px;
+}
+
+.sprite-man-black {
+    width: 256px;
+    height: 256px;
+    background-position: -271px -537px;
+}
+
+.sprite-unchecked-circ {
+    width: 256px;
+    height: 256px;
+    background-position: -537px -537px;
+}
+
+.sprite-unchecked-rect {
+    width: 256px;
+    height: 256px;
+    background-position: -803px -5px;
+}
+
+/* .sprite-woman {
+    width: 256px;
+    height: 256px;
+    background-position: -803px -271px;
+} */
 
 .sprite-woman-black {
-    width: 128px;
-    height: 128px;
-    background-position: -143px -143px;
+    width: 256px;
+    height: 256px;
+    background-position: -803px -537px;
 }

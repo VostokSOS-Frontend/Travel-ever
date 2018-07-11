@@ -19,34 +19,104 @@
     font-size: 15px;
     margin: 0px;
 }
+
 #form{
     margin-top: 20px;
 }
-#gender-content{
-    float: right;
+
+.class{
+    display: flex;
+    flex-direction: column;
+}
+
+.topic{
+    display: flex;
+    justify-content: flex-start;
+}
+.content{
     border: 1px solid black;
     width: 70%;
     height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     box-sizing: border-box;
-    padding-top: 20px;
-    padding-left: 40px;
+    padding-left: 20px; 
 }
-#gender-title{
+
+.container-man{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-woman{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-man > input{
+    visibility: hidden;
+}
+
+.container-man-mark{
+    
+}
+
+.container-woman-mark{
+    /* width: 32px;
+    height: 32px; */
+}
+
+.container-woman > input{
+    visibility: hidden;
+}
+
+.title{
     border: 1px solid black;
     width: 30%;
-    height: 75px;        
-    text-align: center;
+    height: auto;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
 }
 
-.conteiner-man input:checked ~ .custom-mark{
-    width: 128px;
-    height: 128px;
-    background-position: -5px -5px;
+.container-man input:checked ~ .container-man-mark{
+    background-position: -5px -537px;
 }
 
-.conteiner-woman input:checked ~ .custom-mark{
-    width: 128px;
-    height: 128px;
-    background-position: -5px -143px;
+.container-woman input:checked ~ .container-woman-mark{
+    background-position: -803px -271px;
+}
+
+.topic .content > label{
+    margin-right: 5px;
+}
+
+.topic .content > label > input{
+    width: 20px;
+}
+
+.family-history-chackboxes{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-parents input:checked ~ .container-parents-mark{
+    background-position: -5px -271px;
+}
+
+.container-siblings input:checked ~ .container-siblings-mark{
+    background-position: -5px -271px;
+}
+
+.container-parents > input{
+    visibility: hidden;
+}
+.container-siblings > input{
+    visibility: hidden;
 }
