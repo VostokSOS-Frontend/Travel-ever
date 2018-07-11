@@ -1,0 +1,68 @@
+.p1{
+    position:relative;
+}
+.div2{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    display:none;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+.p1:hover .div2{
+    display:block;
+}
+.custommarkf{
+    position:relative;
+    left:20px;
+    bottom:40px;
+    width:68px;
+    height:68px;
+    display:block;
+    background-image: url("spritesheet.png");
+    background-position: -2.1px -151px;
+}
+.pf{
+    position:relative;
+    left:75px;
+}
+.custommarkm{
+    position:relative;
+    left:90px;
+    bottom:40px;
+    width:68px;
+    height:68px;
+    display:block;
+    background-image: url("spritesheet.png");
+    background-position: -2.1px -225px;
+}
+.pm{
+    position:relative;
+    left:150px
+}
+.container input:checked ~ .custommark{ /* имеют общего родителя и .custommark идет в коде после .container, если +, то сразу после */
+    background-position: -3px -6px;
+}
+.container input:checked ~ .custommarkm { /* имеют общего родителя и .custommark идет в коде после .container, если +, то сразу после */
+    background-position: -2.1px -225px;
+    box-shadow: 0 0 6px blue;
+    border-radius: 50%; /* для male|female */
+}
+.container input:checked ~ .custommarkf { /* имеют общего родителя и .custommark идет в коде после .container, если +, то сразу после */
+    background-position: -2.1px -151px;
+    box-shadow: 0 0 6px blue;
+    border-radius: 50%; /* для male|female */
+}
+input[type="checkbox"] {
+    opacity:0;
+}
+.container{
+    display:inline-block;
+}
+box-shadow: 0 0 5px red;
+border-radius: 50%; /* для male|female */
+
+p{
+    text-align: center;
+}
