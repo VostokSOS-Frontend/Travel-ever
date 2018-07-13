@@ -9,16 +9,16 @@
 </head>
 <body>
     <fieldset>
-        <legend><h2>SO FAR SO GOOD. LET'S TALK ABOUT YOUR HEALTH</h2></legend><!-- не пользоваться br, использовать блочный э-нт (div/etc.) или display:block для строчного э-нта -->
+        <legend><h2>SO FAR SO GOOD. LET'S TALK ABOUT YOUR HEALTH</h2></legend>
         <p>
          YOUR GENDER
-        <label class="container"><input type="radio" name="1"><span class="pf">Female</span><span class="custommarkf"></span></label><!-- name у radio должен быть одинаковым -->
+        <label class="container"><input type="radio" name="1"><span class="pf">Female</span><span class="custommarkf"></span></label>
         <label class="container"><input type="radio" name="1"><span class="pm">Male</span><span class="custommarkm"></span></label></p>
         <p id="hw">
            <span> HEIGHT AND WEIGHT</span>
-            <input type="number" placeholder="0" size="20" min="1" max="3">м
-            <input type="number" placeholder="00" size="25" min="1" max="999">кг
-            <input type="number" placeholder="000" size="30" min="1" max="999">г
+            <input type="number" class="kvadratik" placeholder="0" size="20" min="1" max="3">м
+            <input type="number" class="kvadratik" placeholder="00" size="25" min="1" max="999">кг
+            <input type="number" class="kvadratik" placeholder="000" size="30" min="1" max="999">г
         </p>
         <span id="af">anyone in your fam...?</span>
         <p>
@@ -26,6 +26,7 @@
             <label class="container cp"><input type="checkbox"><span class="pp">Parents</span><span class="custommarkp"></span></label>
             <label class="container cs"><input type="checkbox"><span class="ps">Siblings</span><span class="custommarks"></span></label>
         </p>
+        <span id="ha">How active are you on a weekly basis?</span>
         <p>
             <span id="al">ACTIVITY LVL</span> 
            <label class="container"><input type="radio" name="2"><span class="pa">Active</span><span class="custommarka"></span></label>

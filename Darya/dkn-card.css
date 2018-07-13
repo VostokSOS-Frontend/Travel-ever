@@ -123,8 +123,8 @@ legend{
 }
 #af{
     position:relative;
-    bottom:2px;
-    left:181px;
+    bottom:15px;
+    left:166px;
 }
 .custommarka{
     position:relative;
@@ -166,4 +166,16 @@ legend{
     position: relative;
     top:16px;
 }
+.kvadratik{
+    height:50px;
+    width:50px;
+    text-align:center;
+    margin:15px;
+}
 
+
+#ha{
+    position:relative;
+    bottom:15px;
+    left:166px;
+}
