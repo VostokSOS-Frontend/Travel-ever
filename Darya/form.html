@@ -9,7 +9,7 @@
 <body>
     <p>Регистрация</p>
 <form action="form.html" method="GET">
-<p><b>Логин&#160;</b>
+<p><b>Логин&#160;</b> <!-- не пользоваться br, использовать блочный э-нт (div/etc.) или display:block для строчного э-нта -->
     <input type="text" size="40" placeholder="Логин" required autofocus>
    </p>
    <p><b>Пароль&#160;</b>
@@ -34,7 +34,7 @@
        </select>
     <input type="number" placeholder="Год" size="20" min="1900" max="2000">
    </p>
-   <p><b>Пол&#160;</b>
+   <p><b>Пол&#160;</b><!-- name у radio должен быть одинаковым -->
   <input type="radio" name="answer">М
   <input type="radio" name="answer">Ж
   <input type="radio" name="answer">Другое

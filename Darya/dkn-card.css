@@ -13,6 +13,9 @@
 .p1:hover .div2{
     display:block;
 }radio */
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .custommarkf{
     position:relative;
     left:20px;
@@ -45,13 +48,14 @@
 .container input:checked ~ .custommark{
     background-position: -3px -6px;
 }
-.container input:checked ~ .custommarkm { /* имеют общего родителя и .custommark идет в коде после .container, если +, то сразу после */
-    background-position: -2.1px -225px;
-    box-shadow: 0 0 6px blue;
-    border-radius: 50%; 
-}
+
 .container input:checked ~ .custommarkf { 
     background-position: -2.1px -151px;
+    box-shadow: 0 0 6px blue;
+    border-radius: 50%;
+}
+.container input:checked ~ .custommarkm { 
+    background-position: -2.1px -225px;
     box-shadow: 0 0 6px blue;
     border-radius: 50%;
 }
@@ -60,9 +64,118 @@ input[type="radio"] {
     position:relative;
     left:200px;
 }
+input[type="checkbox"] {
+    opacity:0;
+    position:relative;
+    left:200px;
+}
 .container{
     display:inline-block;
+    cursor:pointer;
 }
 legend{
     text-align:center;
+    
+}
+.custommarkp{
+    position:relative;
+    left:7px;
+    bottom:29px;
+    width:68px;
+    height:68px;
+    display:block;
+    background-image: url("spritesheet.png");
+    background-position: -2.1px -446px;
+}
+.container input:checked ~ .custommarkp { 
+    background-position: -2.1px -520px;
+}
+.pp{
+    position:relative;
+    left:68px;
+    top:11px;
+}
+.custommarks{
+    position:relative;
+    left:76px;
+    bottom:28px;
+    width:68px;
+    height:68px;
+    display:block;
+    background-image: url("spritesheet.png");
+    background-position: -2.1px -446px;
+}
+.container input:checked ~ .custommarks { 
+    background-position: -2.1px -520px;
+}
+.ps{
+    position:relative;
+    left:142px;
+    top:11px;
+}
+#fh{
+    position:relative;
+    top:17px;
+}
+#hw{
+    position:relative;
+    bottom:21px;
+}
+#af{
+    position:relative;
+    bottom:15px;
+    left:166px;
+}
+.custommarka{
+    position:relative;
+    left:28px;
+    bottom:28px;
+    width:68px;
+    height:68px;
+    display:block;
+    background-image: url("spritesheet.png");
+    background-position: -2.1px -446px;
+}
+.container input:checked ~ .custommarka { 
+    background-position: -2.1px -372px;
+}
+.custommarkn{
+    position:relative;
+    left:99px;
+    bottom:28px;
+    width:68px;
+    height:68px;
+    display:block;
+    background-image: url("spritesheet.png");
+    background-position: -2.1px -446px;
+}
+.container input:checked ~ .custommarkn { 
+    background-position: -2.1px -372px;
+}
+.pa{
+    position: relative;
+    left:89px;
+    top:13px;
+}
+.pn{
+    position: relative;
+    left:163px;
+    top:13px;
+}
+#al{
+    position: relative;
+    top:16px;
+}
+.kvadratik{
+    height:50px;
+    width:50px;
+    text-align:center;
+    margin:15px;
+}
+
+
+#ha{
+    position:relative;
+    bottom:15px;
+    left:166px;
 }
