@@ -1,0 +1,29 @@
+img{
+    position: absolute;
+    width: 600px;
+}
+
+.amazon{
+    clip: rect(0px, 120px, auto, 0px);
+}
+
+.apple{
+    clip: rect(0px, 240px, auto, 120px);
+}
+.facebook{
+    clip: rect(0px, 360px, auto, 240px);
+}
+
+.google{
+    clip: rect(0px, 480px, auto, 360px);
+}
+
+.microsoft{
+    clip: rect(0px, 600px, auto, 480px);
+}
+img:active{
+    background-color: white;
+    clip: unset;
+    z-index: 10;
+    animation-duration: 2s;
+}
