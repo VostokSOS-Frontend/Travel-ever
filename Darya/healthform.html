@@ -9,33 +9,27 @@
 </head>
 <body>
     <fieldset>
-        <legend><h2>SO FAR SO GOOD. LET'S TALK ABOUT YOUR HEALTH</h2></legend>
+        <legend><h2>SO FAR SO GOOD. LET'S TALK ABOUT YOUR HEALTH</h2></legend><!-- не пользоваться br, использовать блочный э-нт (div/etc.) или display:block для строчного э-нта -->
         <p>
-        YOUR GENDER
-        <label class="container cf"><input type="radio"><span class="pf">Female</span><span class="custommarkf"></span></label>
-        <label class="container cm"><input type="radio"><span class="pm">Male</span><span class="custommarkm"></span></label>
-    </p>
-    <p>
-            HEIGHT AND WEIGHT
-            <label class="container"><input type="radio">Female<span class="custommark"></span></label>
-            <label class="container"><input type="radio">Male<span class="custommark"></span></label>
+         YOUR GENDER
+        <label class="container"><input type="radio" name="1"><span class="pf">Female</span><span class="custommarkf"></span></label><!-- name у radio должен быть одинаковым -->
+        <label class="container"><input type="radio" name="1"><span class="pm">Male</span><span class="custommarkm"></span></label></p>
+        <p id="hw">
+           <span> HEIGHT AND WEIGHT</span>
+            <input type="number" placeholder="0" size="20" min="1" max="3">м
+            <input type="number" placeholder="00" size="25" min="1" max="999">кг
+            <input type="number" placeholder="000" size="30" min="1" max="999">г
+        </p>
+        <span id="af">anyone in your fam...?</span>
+        <p>
+           <span id="fh">FAMILY HISTORY</span> 
+            <label class="container cp"><input type="checkbox"><span class="pp">Parents</span><span class="custommarkp"></span></label>
+            <label class="container cs"><input type="checkbox"><span class="ps">Siblings</span><span class="custommarks"></span></label>
         </p>
         <p>
-                FAMILY HISTORY
-                <label class="container"><input type="radio">Parents<span class="custommark"></span></label>
-                <label class="container"><input type="radio">Siblings<span class="custommark"></span></label>
-            </p>
-            <p>
-                    ACTIVITY LEVEL
-                    <label class="container"><input type="radio">Active<span class="custommark"></span></label>
-                    <label class="container"><input type="radio">Not very active<span class="custommark"></span></label>
-                </p>
-                <p>
-                        DIABETES
-                        <label class="container"><input type="radio">Pre-diabetes<span class="custommark"></span></label>
-                        <label class="container"><input type="radio">Type-2<span class="custommark"></span></label>
-                        <label class="container"><input type="radio">Neither<span class="custommark"></span></label>
-                    </p>
-    </fieldset>
+            <span id="al">ACTIVITY LVL</span> 
+           <label class="container"><input type="radio" name="2"><span class="pa">Active</span><span class="custommarka"></span></label>
+           <label class="container"><input type="radio" name="2"><span class="pn">Not very active</span><span class="custommarkn"></span></label>
+        </p>
 </body>
 </html>
