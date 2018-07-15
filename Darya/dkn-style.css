@@ -137,7 +137,7 @@ nav{
     position:absolute;
 }
 img{
-    position: absolute;
+    position: absolute;/* другие элементы могут занимать его место, э-нт может находиться над другими э-тами */
 }
 /* .div3{
     width: 100px;
