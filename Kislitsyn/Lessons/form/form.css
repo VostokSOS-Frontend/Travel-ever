@@ -50,13 +50,13 @@ body{
     color: rgb(175,175,175);
 }
 .field{
-    border-bottom: 2px solid #DDD;
     font-size: 20px;
     margin-left: 41px;
     margin-bottom: 25px;
+    border: none;
+    border-bottom: 2px solid lightgrey;
     width: 315px;
     height: 55px;
-    border: none;
 }
 .btn{
     width: 250px;
