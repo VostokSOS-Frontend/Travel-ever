@@ -1,0 +1,99 @@
+h1{
+    text-align: center;
+    font-size: 45px; 
+}
+h3{
+    position: relative;
+    left: 50%;
+    width: 100px;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin: 15px 0 35px -50px;
+    color: white;
+    background-color: #D00;
+    font-size: 12px;
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    text-shadow: 0 0 1px rgb(0,0,0);
+    padding: 2px 36px;
+    margin: 60px 0 20px 0;
+    border-left: 5px solid;
+    border-color: #D00;
+    font-size: 25px;
+    color: #E00;
+}
+.input{
+    padding-left: 41px;
+    width: 100%;
+}
+.box{
+   
+    height: 520px;
+    width: 400px;
+    left: 50%;
+    position: absolute;
+    box-shadow: 1px 1px 3px #BBB;
+    background-color: #FEFEFE;
+    border-radius: 7px 7px 3px 3px;
+    margin-left: -200px;
+    z-index: 20;
+}
+div{
+    display: block;
+}
+body{
+    background-color: rgb(222,222,222);
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(175,175,175);
+}
+.field{
+    border-bottom: 2px solid #DDD;
+    font-size: 20px;
+    margin-left: 41px;
+    margin-bottom: 25px;
+    width: 315px;
+    height: 55px;
+    border: none;
+}
+.btn{
+    width: 250px;
+    margin-top: 25px;
+    border: none;
+    margin-left: 75px;
+    padding: 20px;
+    transition: border-color 0.5s,color 0.5s;
+    border-radius: 3px;
+    left: 50%;
+    font-weight: bold;
+    color: #DDD;
+    font-size: 25px;
+    box-shadow: 0 0 5px, 0 0 5px;
+    background-color: #FEFEFE;
+    cursor: pointer;
+}
+.box::before{
+    top: -9px;
+    position: absolute;
+    background-color: #EEE;
+    width: 380px;
+    height: 15px;
+    left: 50%;
+    content: "";
+    margin-left: -190px;
+    border-radius: 12px;
+    z-index: 1;
+}
+.bottom{
+    position: relative;
+    margin-top: 30px;
+    left: 50%;
+    color: #DDD;
+    width: 250px;
+    text-align: center;
+    margin-left: -125px;
+    font-size: 23px;
+    cursor: pointer;
+}
