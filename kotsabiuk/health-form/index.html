@@ -28,11 +28,13 @@
                     </div>        
                     <div class="content">
                         <label class="container-man">
-                            <input type="radio" name="gender" value="male" checked/> Male 
+                            <input type="radio" name="gender" value="male" checked/>
+                            <span>Male</span> 
                             <span class="container-man-mark sprite sprite-man-black"></span>
                         </label>
                         <label class="container-woman">
-                            <input type="radio" name="gender" value="female"/>Female
+                            <input type="radio" name="gender" value="female"/>
+                            <span>Female</span>
                             <span class="container-woman-mark sprite sprite-woman-black"></span>
                         </label>
                     </div>
@@ -43,49 +45,105 @@
                             height &amp; weight
                         </p>
                     </div>
-                    <div class="content">
+                    <div class="content" id="height-weight">
+                        
                         <label for="meters">
-                            <input type="text" name="meters" value="" placeholder="0"/>
+                            <input type="number" max="2" id="meters" value="" placeholder="0"/>
                             <span>m</span>
                         </label>
+
                         <label for="centimeters">
-                                <input type="text" name="centimeters" value="" placeholder="00"/>
+                                <input type="number" max="99" id="centimeters" name="centimeters" value="" placeholder="00"/>
                                 <span>cm</span>
                         </label>
                         <label for="kilogames">
-                            <input type="text" name="kilogames" value="" placeholder="00"/>
+                            <input type="number" max="200" id="kilogames" value="" placeholder="00"/>
                             <span>kg</span>
                         </label>
                     </div>
                 </div> 
-                <div class="topic">
+                <div class="topic" id="family-history">
                     <div class="title">
                         <p>
                             family history
                         </p>
                     </div>
                     <div class="content">
-                        <p>
-                            Anyone in your family have prediabetes?
-                        </p>
-                        <p>
-                            Check all that applly. And if you would rather not say, that's okey.
-                        </p>
-                        <div class="family-history-chackboxes>">
+                        <div>
+                            <span>
+                                Anyone in your family have prediabetes?
+                            </span>
+                            <span>
+                                Check all that applly. And if you would rather not say, that's okey.
+                            </span>
+                        </div>
+                        <div class="family-history-chackboxes">
                             <label class="container-parents">
-                                <input type="checkbox" name="parents" value="" checked/>Parents
+                                <input type="checkbox" name="parents" value="" checked/>
+                                <span>Parents</span>
                                 <span class="container-parents-mark sprite sprite-unchecked-rect"></span>
                             </label>
                             <label class="container-siblings">
-                                    <input type="checkbox" name="siblings" value=""/>Siblings
-                                    <span class="container-siblings-mark sprite sprite-unchecked-rect"></span>
+                                <input type="checkbox" name="siblings" value=""/>
+                                <span>Siblings</span>
+                                <span class="container-siblings-mark sprite sprite-unchecked-rect"></span>
                             </label>
                         </div>
                     </div>
                 </div>
-
-
-                
+                <div class="topic">
+                    <div class="title">
+                        <p>
+                            activity level
+                        </p>
+                    </div>
+                    <div class="content activity-level">
+                        <span id="activity-q">
+                            How active are you on a weekly basis?
+                        </span>
+                        <div id="not-active">
+                            <label class="container-lazy">
+                                <input type="radio" name="activity" value="lazy" checked/>
+                                <span>Not vary active</span> 
+                                <span class="container-lazy-mark sprite sprite-lazy-black"></span>
+                            </label>
+                            <label class="container-active">
+                                <input type="radio" name="activity" value="active"/>
+                                <span>Active</span>
+                                <span class="container-active-mark sprite sprite-active-black"></span>
+                            </label>
+                        </div>                     
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="title">
+                        <p>
+                            diabetes
+                        </p>
+                    </div>
+                    <div class="content diabete">
+                        <span id="diabete-q">
+                            Have you been diagnosed with diabetes before?
+                        </span>
+                        <div id="diabete-status">
+                            <label class="container-pre-diabete">
+                                <input type="radio" name="diabete" value="pre-diabete" checked/>
+                                <span>Pre-diabetes</span> 
+                                <span class="container-pre-diabete-mark sprite sprite-unchecked-circ"></span>
+                            </label>
+                            <label class="container-type-2">
+                                <input type="radio" name="diabete" value="type-2"/>
+                                <span>Type-2</span>
+                                <span class="container-type-2-mark sprite sprite-unchecked-circ"></span>
+                            </label>
+                            <label class="container-neither">
+                                <input type="radio" name="diabete" value="neither"/>
+                                <span>Neither</span>
+                                <span class="container-neither-mark sprite sprite-unchecked-circ"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
