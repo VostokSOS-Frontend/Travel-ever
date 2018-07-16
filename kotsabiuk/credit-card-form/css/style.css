@@ -1,0 +1,128 @@
+
+body{
+    background-image: url("../img/bg.jpg");
+    background-repeat: repeat;
+    align-content: center;
+    margin-top: 4%;
+}
+.form{
+    text-transform: uppercase;
+    width: 400px;
+    min-width: 200;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+    margin-top: 4%;
+}
+.credit-card{
+    border-radius: 30px;
+    width: 70%;
+    margin: -13% 15% 0px 15%;
+}
+.form form{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#card-number{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: col;
+    justify-content: space-between;
+    border: none;
+    margin-top: 10px;
+    margin-left:  0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+input[type="text"]{
+    height: 20px;
+}
+
+#card-number input{
+    text-align: center;
+    width: 60px;
+}
+
+#card-holder{
+    margin-top: 10px;
+    margin-left:  0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 100%;
+}
+
+#expiration-date{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+#expiration-date input{
+    width: 50px;
+}
+
+#expiration-date input:last-child{
+    margin-left: 20px;
+}
+
+label[for="cvv"]{
+    display: block;
+}
+
+#cvv{
+    margin-top: 10px;
+    margin-left:  0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 50px;
+    display: block;
+}
+
+#submit-payment{
+    width: 80%;
+    margin-left:  10%;
+    margin-right: 10%;
+    height: 60px;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#submit-payment-text{
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+#submit-payment-text::after{
+    content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  z-index: 10;
+  top: -5px;
+  right: -25px;
+  background-image: url(../img/unlock.png);
+  background-size: cover;
+}
+
+#submit-payment:hover #submit-payment-text::after{
+  background-image: url(../img/lock.png);
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;
+}
