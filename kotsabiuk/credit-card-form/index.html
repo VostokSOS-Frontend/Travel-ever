@@ -16,25 +16,28 @@
                 card number
             </label>
             <div id="card-number">
-                <input  type="text" placeholder="XXXX" required/>
-                <input  type="text" placeholder="XXXX" required/> 
-                <input  type="text" placeholder="XXXX" required/> 
-                <input  type="text" placeholder="XXXX" required/>
+                <input  type="text" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4" required/>
+                <input  type="number" placeholder="XXXX" /> 
+                <input  type="number" placeholder="XXXX" /> 
+                <input  type="number" placeholder="XXXX" />
             </div>
-             
             <label  for="card-holder">
                 card holder
             </label>
-            <input id="card-holder" type="text" placeholder="Full name"/>
+            <input id="card-holder" type="text" placeholder="Full name" />
 
             <label for="expiration-date">expiration date</label>
             <div id="expiration-date">
-                <input type="text" placeholder="MM">
-                <input type="text" placeholder="YYYY">
+                <input type="text" placeholder="MM" />
+                <input type="text" placeholder="YYYY"/>
             </div>
             <label for="cvv">cvv</label>
             <input id="cvv" type="text" placeholder="CVV">
-            <input id="submit-payment" type="submit" value="SUBMIT PAYMENT">sdsd</input>
+            <button id="submit-payment" type="submit">
+                <span id="submit-payment-text">
+                    submit payment
+                </span>
+            </button>
         </form>
     </div>
 </html>

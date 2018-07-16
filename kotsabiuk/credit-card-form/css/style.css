@@ -9,7 +9,7 @@ body{
     text-transform: uppercase;
     width: 400px;
     min-width: 200;
-    height: 580px;
+    height: 550px;
     margin-left: auto;
     margin-right: auto;
     background-color: azure;
@@ -90,19 +90,39 @@ label[for="cvv"]{
 
 #submit-payment{
     width: 80%;
-    margin-left:  auto;
-    margin-right: auto;
+    margin-left:  10%;
+    margin-right: 10%;
     height: 60px;
     background-color: royalblue;
-    border: none;
-    display: block;
     color: white;
+    cursor: pointer;
+    border: none;
 }
 
-/* #submit-payment::after{
-    content: url(../img/ublock.png);
-} */
-#submit-payment::after{
-    content: "<- СКУЧНО!";
-    color: red;
- }
+#submit-payment-text{
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+#submit-payment-text::after{
+    content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  z-index: 10;
+  top: -5px;
+  right: -25px;
+  background-image: url(../img/unlock.png);
+  background-size: cover;
+}
+
+#submit-payment:hover #submit-payment-text::after{
+  background-image: url(../img/lock.png);
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;
+}
