@@ -28,7 +28,7 @@ h2{
 }
 .under{
     width: 346px;
-    height: 500px;
+    height: 20px;
     background-color: rgb(243, 243, 243);
     position:absolute;
     top:156px;
@@ -59,6 +59,7 @@ input[type="submit"]{
     top:103px;
     margin-left:21%;
     width:200px;
+    height: 40px;
     text-transform: uppercase;
     border:1px solid grey;
     border-radius:5px;
@@ -77,13 +78,12 @@ input[type="submit"]:hover{
 }
 a{
     position:relative;
-    top:120px;
+    top:124px;
     padding-left:29%;
     color:grey;
     text-decoration:none;
 }
 a:hover{
-    color:red;
     -webkit-transition: border 0.7s, color 0.7s, -webkit-transform 1s;
     transition: border 0.7s, color 0.7s, transform 1s;
 }
@@ -95,16 +95,12 @@ a:hover{
     top:54px;
     margin-left:25px;
     -webkit-transition: width 2s, height 2s, -webkit-transform 1s;
-    transition: width 2s, height 2s, transform 1s;
-    
-}
-#i1:focus + .unp{
+    transition: width 2s, height 2s, color 2s, transform 1s;
+    }
+input:focus + .unp{
     -webkit-transform: scale(0.8);
-    transform: scale(0.8) translate(-40px, -15px);
-}
-#i2:focus + .unp{
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8) translate(-40px, -15px);
+    transform: scale(0.8) translate(-43px, -15px);
+    color:rgb(173, 172, 172);
 }
 
 
