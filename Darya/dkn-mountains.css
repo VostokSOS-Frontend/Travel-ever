@@ -1,5 +1,4 @@
 body{
-    min-height: 100%;
     background-image: url("images/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
     background-size:116%;
     background-repeat: no-repeat;
@@ -100,6 +99,6 @@ a:hover{
     border-image:url("https://dzbc.org/wp-content/uploads/data/2018/2/14/blue-gradient-abstract-hd-wallpaper-x-PIC-MCH048219.png") 30 round round;
     }
 
-    a, a:hover{
+a, a:hover{
         text-decoration: none;
     }
