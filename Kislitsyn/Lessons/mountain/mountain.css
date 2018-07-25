@@ -1,7 +1,9 @@
 body{
     background-image: url(mountain.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Muli', sans-serif;
+    min-width: 1050px;
 }
 .main{
     width: 100%;
@@ -15,25 +17,52 @@ body{
 }
 .home{
     margin-right: 60px;
+    color: #6894b8;
+}
+.home:hover{
+    margin-right: 60px;
     color: #495e8a;
+    cursor: pointer;
 }
 .menu{
     margin-right: 60px;
     color: #6894b8;
 }
+.menu:hover{
+    margin-right: 60px;
+    color: #495e8a;
+    cursor: pointer;
+}
 .about{
-    margin-right: 800px;
+    margin-right: auto;
     color: #6894b8;
+}
+.about:hover{
+    margin-right: auto;
+    color: #495e8a;
+    cursor: pointer;
 }
 .login{
     margin-right: 40px;
     color: #6894b8;
+}
+.login:hover{
+    margin-right: 40px;
+    color: #495e8a;
+    cursor: pointer;
 }
 .sign{
     padding: 10px;
     border-radius: 10%;
     border: 1.2px solid #3068cf;
     color: #6894b8;
+}
+.sign:hover{
+    padding: 10px;
+    border-radius: 10%;
+    border: 1.2px solid #abc2eb;
+    color: #495e8a;
+    cursor: pointer;
 }
 .hat{
     display: flex;
@@ -58,6 +87,18 @@ body{
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 2px;
     background: linear-gradient(to right, #0563ce, #799ad8);
+}
+.btn-get:hover{
+    width: 200px;
+    height: 50px;
+    border: 2px solid #abc2eb;
+    color: #495e8a;
+    border-radius: 2px;
+    margin-left: 70px;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #799ad8, #799ad8);
+    cursor: pointer;
 }
 .a{
     font-size: 50px;
