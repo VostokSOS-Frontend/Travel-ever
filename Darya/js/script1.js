@@ -1,6 +1,6 @@
 'strict mode';
 
-let number = +prompt('Введите номер вашего билета');
+/* let number = +prompt('Введите номер вашего билета');
 
 const d6 = number % 10;
 number=(number-d6)/10;
@@ -19,7 +19,7 @@ if(d1+d2+d3===d4+d5+d6){
 } else{
     alert('Обычный');
 }
-
+ */
 // const tmp = +prompt('Ваша температура');
 // if (tmp<37 && tmp>35){
 //     alert('Вы здоровы');
@@ -34,7 +34,7 @@ if(d1+d2+d3===d4+d5+d6){
 // Знаки зодиака
 // const mnth = +prompt ('Месяц вашего рождения')
 // const date = +prompt ('Число вашего рождения')
-if ((mnth===3 && date<=31 && date>=21) || (mnth===4 && date>=1&& date<=20)){
+/* if ((mnth===3 && date<=31 && date>=21) || (mnth===4 && date>=1&& date<=20)){
     alert('Овен');
 } else if((mnth===4 && date<=31 && date>=21) || (mnth===5 && date>=1 && date<=20)){
     alert('Телец');
@@ -58,7 +58,7 @@ if ((mnth===3 && date<=31 && date>=21) || (mnth===4 && date>=1&& date<=20)){
     alert('Водолей');
 } else if((mnth===2 && date<=31 && date>=21) || (mnth===3 && date>=1&& date<=20)){
     alert('Рыбы');
-}
+} */
 
 // Как стать миллионером
 // const q1 = '1?\n 1.1\n 2.2\n 3.3\n 4.4';
