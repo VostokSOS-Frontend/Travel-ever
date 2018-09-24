@@ -11,34 +11,29 @@
 </head>
 
 <body>
-    <header>
-        <div class='header'>
-            <div class='logo edge'>
+    <header class="header">
+            <div class='logo'><a href=""></a>
             </div>
-            <nav>
-                <div class='nav'>
-                    <ul>
-                        <li id='icon1'></li>
-                        <li id='icon2'></li>
-                        <li id='icon3'></li>
-                        <li id='icon4'></li>
-                        <li id='icon5'></li>
-                        <li id='icon6'></li>
+            <nav class='nav'>
+                    <ul class="menu-list">
+                        <li id='icon1' class="menu-item"><a href=""></a></li>
+                        <li id='icon2' class="menu-item"><a href=""></a></li>
+                        <li id='icon3' class="menu-item"><a href=""></a></li>
+                        <li id='icon4' class="menu-item"><a href=""></a></li>
+                        <li id='icon5' class="menu-item"><a href=""></a></li>
+                        <li id='icon6' class="menu-item"><a href=""></a></li>
                     </ul>
-                </div>
             </nav>
-            <div class='user edge'>
-                    <div class='userPhoto'></div>
+            <div class='user'>
+                    <div class='userPhoto'><a href=""></a></div>
                     <div class='userText'>Carol Danvers</div>
                     <div class='userEdit'></div>
             </div>
-        </div>
     </header>
     <section>
             <button class='watchNowButton regularText'>watch now</button>
 
-            <div class="extraInfo">
-
+            <div class="extraInfo" id="extraInfo">
                 <div class="leftEdgeInfo">
                     <span class="regularText">published</span>
                     <span class="highlightedText">feb 20, 2014</span>
@@ -57,26 +52,57 @@
             </div>
     </section>
     <main>
-        <section class="section">
-            <div class="featuredSection">
-                <div class="title">featured movies</div>
-                <div class="square" id="sqr1"></div>
-                <div class="square" id="sqr2"></div>
-                <div class="vertical" id="vert1"></div>
-                <div class="horizontal" id="hor1"></div>
+        <div class="titles">
+            <div class="featuredMovies">featured movies</div>
+            <div class="cursiveTitles">
+                <div id="newRealised">new realised</div>
+                <div>/</div>
+                <div id="TandC">Trailers & Clips</div>
             </div>
+            <div class="searchField">
+                    <input name="s" placeholder="Search" type="search" class="search">
+            </div>
+        </div>
+        <section class="section featuredSection">
+                <!-- <div class="title">featured movies</div> -->
+                <div class="square" id="sqr1"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
+                <div class="square" id="sqr2"><div class="layout">
+                    <div class="downloadButton"></div>
+                <div class="layoutLikes"></div>
+                <div></div></div></div>
+                <div class="vertical" id="vert1"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
+                <div class="horizontal" id="hor1"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
         </section>
-        <section class="section">
-            <div class="realisedSection">
-                <div class="square" id="sqr3"></div>
-                <div class="square" id="sqr4"></div>
-                <div class="square" id="sqr5"></div>
-                <div class="horizontal" id="hor2"></div>
-                <div class="vertical" id="vert2"></div>
-                <div class="square" id="sqr6"></div>
-                <div class="square" id="sqr7"></div>
-            </div>
+        <section class="section realisedSection">
+                <div class="square" id="sqr3"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
+                <div class="square" id="sqr4"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
+                <div class="square" id="sqr5"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
+                <div class="horizontal" id="hor2"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
+                <div class="vertical" id="vert2"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
+                <div class="square" id="sqr6"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
+                <div class="square" id="sqr7"><div class="layout"><div class="downloadButton"></div>
+                <div></div>
+                <div></div></div></div>
         </section>
     </main>
+    <!-- <script src="js/moviestore.js"></script> -->
 </body>
 </html>
