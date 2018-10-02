@@ -1,0 +1,7 @@
+#xbutton{
+    opacity: 0;
+}
+
+li:hover #xbutton{
+    opacity: 1;
+}

@@ -1,0 +1,28 @@
+.image-small{
+    width: 200px;
+    height: 150px;
+}
+.image-big{
+    width: 450px;
+    height: 300px;
+}
+#imgdiv{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.image-title {
+    position: absolute;
+    margin: 0;
+    left: 2rem;
+    right: 0;
+    bottom: 7.5rem;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 0 0 4px #fff;
+}
+
+.button{
+    position:relative;
+    left:422px;
+}
