@@ -135,47 +135,39 @@
 //     document.write('</p>');
 // }
 
-"strict mode"
-deposit=+prompt("Внесите депозит");
-while(deposit!=0){
-bet=+prompt("Сделайте ставку ");
-    if(bet<=deposit){
-        number=+prompt(`Введите цифру от 1 до 6 на которую вы ходите поставить ${bet} грн`);
-        if(number<=6 && number>=1){
-            function randomInteger(min=1, max=6){
-                var rand1 = min - 0.5 + Math.random() * (max - min + 1);
-                rand = Math.round(rand);
-                return rand;
-                var rand2 = min - 0.5 + Math.random() * (max - min + 1);
-                rand = Math.round(rand);
-                return rand;
-                var rand3 = min - 0.5 + Math.random() * (max - min + 1);
-                rand = Math.round(rand);
-                return rand;
-            }
-            if(number=rand1 || rand2 || rand3){
-                deposit=deposit+bet;
-                alert(`Вы выиграли ${bet*2} грн`);
-            }
-            if(number=rand1 && rand2 || rand1 && rand3 || rand2 && rand3){
-                deposit=deposit+bet*2;
-                alert(`Вы выиграли ${bet*3} грн`);
-            }
-            if(number=rand1 && rand2 && rand3){
-                deposit=deposit+bet*3;
-                alert(`Вы выиграли ${bet*4} грн`);
-            }
-            else{
-                deposit=deposit-bet;
-                alert(`Вы проиграли ${bet} грн`);
-            }
-            alert(`Ваш балланс равен ${deposit} грн`);
-        }
-        else{
-            alert("Поставте сумму на число от 1 до 6");
-        }
-    }
-    else{
-        alert("Ставка не должна превышать депозит");
-    }
-}
+
+
+
+
+// "strict mode"
+// deposit=+prompt("Внесите депозит");
+// while(deposit!=0){
+// bet=+prompt("Сделайте ставку ");
+// if(bet!=0){
+//     if(bet<=deposit){
+//         number=+prompt(`Введите цифру от 1 до 6 на которую вы ходите поставить ${bet} грн`);
+//         if(number<=6 && number>=0){
+//             var rand1 = Math.floor(Math.random() * 6) + 1;
+//             alert(rand1)
+//             if(number===rand1){
+//                     deposit=deposit+bet;
+//                     alert(`Вы выиграли ${bet*2} грн`);
+//                 }
+//             else{
+//                 deposit=deposit-bet;
+//                 alert(`Вы проиграли ${bet} грн`);
+//             }
+//             alert(`Ваш балланс равен ${deposit} грн`);
+//         }
+//         else{
+//             alert("Поставте сумму на число от 1 до 6");
+//         }
+//     }
+//     else{
+//         alert("Ставка не должна превышать депозит");
+//     }
+// }
+// else{
+//     alert(`Вы выиграли ${deposit} грн. Можете забрать деньги`)
+// }
+// }
